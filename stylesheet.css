@@ -1,99 +1,106 @@
 /* General reset */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
-/* Set all fonts to bold */
+/* Set all fonts to bold and apply consistent padding */
 body, p, button, h1, h2 {
-    color: white;
-    padding: 20px;
-    font-weight: bold;
+    color: white; /* Set text color to white */
+    padding: 20px; /* Apply padding to all these elements */
+    font-weight: bold; /* Set font weight to bold */
 }
 
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #333;
+    font-family: Arial, sans-serif; /* Use Arial as the main font */
+    display: flex; /* Enable flexbox for body to center the content */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    height: 100vh; /* Make the body take full viewport height */
+    background-color: #333; /* Dark background color for contrast */
 }
 
-/* Game container with grass green background */
+/* Game container with grass green background and styling */
 .game-container {
-    width: 600px;
-    height: 600px;
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(to bottom, #d7f724, #2bd42b);;  /* Grass green background */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background-image: url('Yoyo Game Club Logo.png');
-    background-size: cover;
-    background-position: center;
+    width: 600px; /* Set a fixed width */
+    height: 600px; /* Set a fixed height */
+    max-width: 600px; /* Ensure max width doesn't exceed 600px */
+    margin: auto; /* Center horizontally */
+    text-align: center; /* Center all text inside the container */
+    padding: 20px; /* Add padding inside the container */
+    background: linear-gradient(to bottom, #d7f724, #2bd42b); /* Gradient from light green to dark green */
+    border-radius: 10px; /* Round the corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    background-image: url('Yoyo Game Club Logo.png'); /* Background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
 }
 
 /* Make the BlackJack title yellow */
 h1 {
-    color: yellow;
+    color: yellow; /* Make the game title stand out in yellow */
 }
 
-/* Responsive text and button styling */
+/* Basic spacing for paragraphs and buttons */
 p, button {
-    margin-top: 10px;
+    margin-top: 10px; /* Add space above the paragraph and button */
 }
 
+/* Style the buttons with a yellow background and white text */
 button {
-    width: 200px;
-    padding: 10px 20px;
-    background-color: #ebd40a;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
+    width: 200px; /* Set a fixed width for buttons */
+    padding: 10px 20px; /* Add padding inside buttons */
+    background-color: #ebd40a; /* Yellow background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Slight rounding for buttons */
+    cursor: pointer; /* Change cursor to pointer when hovering over button */
+    font-size: 1rem; /* Set font size */
 }
 
+/* Button hover effect to change background color on hover */
 button:hover {
-    background-color: #218838;
+    background-color: #218838; /* Change background color on hover to a darker green */
 }
 
+/* Style for disabled buttons (greyed out) */
 button:disabled {
-    background-color: #555;
+    background-color: #555; /* Grey background when button is disabled */
 }
 
-/* Card display area */
+/* Style for card display area */
 .card-display {
-    margin-top: 15px;
+    margin-top: 15px; /* Add space above card display */
 }
 
+/* Style for game message text */
 #message {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Slightly larger font size for message */
 }
 
 /* Media queries for responsiveness */
+
+/* Adjustments for screen widths up to 768px */
 @media (max-width: 768px) {
     .game-container {
-        padding: 15px;
-        max-width: 90%;
+        padding: 15px; /* Reduce padding for smaller screens */
+        max-width: 90%; /* Allow the container to be 90% of the screen width */
     }
     
     button {
-        width: 100%;
-        font-size: 0.9rem;
+        width: 100%; /* Make buttons full width on smaller screens */
+        font-size: 0.9rem; /* Slightly smaller font size */
     }
 }
 
+/* Further adjustments for screen widths up to 480px */
 @media (max-width: 480px) {
     .game-container {
-        padding: 10px;
+        padding: 10px; /* Further reduce padding on very small screens */
     }
 
     button {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* Smaller font size for buttons */
     }
 }

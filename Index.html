@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta data: character set and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="stylesheet.css">
+    
+    <!-- Link to external JavaScript file with defer attribute for delayed execution -->
     <script defer src="script.js"></script>
+    
+    <!-- Page title for the browser tab -->
     <title>BlackJack ♠️♥️♦️♣️</title>
 </head>
 <body>
+    <!-- Main game container -->
     <div class="game-container">
+        <!-- Game title -->
         <h1>BlackJack</h1>
+        
+        <!-- Message area that shows game-related messages -->
         <p id="message">Want to play a round?</p>
+        
+        <!-- Display section for cards and their sum -->
         <div class="card-display">
+            <!-- Placeholder for displaying the drawn cards -->
             <p id="cards">Cards: </p>
+            
+            <!-- Placeholder for displaying the sum of the cards -->
             <p id="sum">Sum: </p>
         </div>
+        
+        <!-- Button to start the game -->
         <button id="start-game">Start Game</button>
+        
+        <!-- Button to draw a new card (disabled initially) -->
         <button id="new-card" disabled>New Card</button>
+        
+        <!-- Display player's balance or starting amount -->
         <h2>Per: $200</h2>
     </div>
 </body>
